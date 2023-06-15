@@ -1,0 +1,277 @@
+@import url(reset.css);
+
+body {
+  font-family: "NotoSansTC", sans-serif;
+  box-sizing: border-box;
+}
+
+/* -------------------------- 中間大圖 -------------------*/
+.indexpic {
+  position: relative;
+}
+
+.indexpic__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.bigpic {
+  background-size: cover;
+  height: 1000px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+.filter {
+  width: 100%;
+  height: 1000px;
+  background-color: rgba(239, 237, 240, 0.6);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.line {
+  width: 100%;
+  height: 10px;
+  background-color: #c17b3a;
+}
+
+.bigpic h1 {
+  font-size: 78px;
+  font-weight: bold;
+  color: #1c1c1c;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.2;
+}
+
+.user {
+  position: relative;
+  display: inline-block;
+}
+
+i {
+  position: absolute;
+  left: 20px;
+  top: calc(50% - 0.5em);
+}
+
+.user input {
+  text-indent: 40px;
+}
+
+.address {
+  box-shadow: 0 0 10px rgba(193, 128, 53, 0.25);
+  border: none;
+  width: 350px;
+  height: 60px;
+  border-radius: 8px;
+  outline: none;
+}
+
+section .start {
+  background-color: #c1d969;
+  padding: 20px 30px;
+  font-size: 20px;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+/* ------------------------ 快速開始 ------------------------------ */
+.letgo {
+  width: 850px;
+}
+
+.letgo p,
+.story p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 20%;
+  color: #756e6e;
+}
+
+.cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  counter-reset: my-awesome-counter;
+  margin-top: 50px;
+  margin-bottom: 115px;
+}
+
+.card:nth-child(2n + 1) {
+  margin-right: 50px;
+}
+
+.card {
+  background-color: #fff2e5;
+  display: flex;
+  flex-direction: column;
+  border-radius: 13px;
+  width: 360px;
+  /* height: 344px; */
+  position: relative;
+  flex-grow: 1;
+  counter-increment: my-awesome-counter;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.card h4 {
+  color: #756e6e;
+  font-weight: bold;
+  margin: 15px 80px;
+  font-size: 20px;
+}
+
+.card img {
+  /* height: 262px; */
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.card::before {
+  content: counter(my-awesome-counter);
+  color: #756e6e;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  left: -50px;
+  line-height: 94px;
+  width: 94px;
+  height: 94px;
+  top: -30px;
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/* --------------------------------- 精選商家 ---------------------------------- */
+
+.store {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #efedf0;
+  margin-bottom: 115px;
+  height: 1015px;
+  margin: 0 auto;
+}
+
+.pic-boxs {
+  width: 1160px;
+  height: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: flex;
+  /* outline: 2px dashed blue; */
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.picbox1 {
+  width: 570px;
+  height: 596px;
+}
+
+.picbox2 {
+  width: 281px;
+  height: 392px;
+  margin: 0 13px 13px 13px;
+}
+
+.picbox3 {
+  width: 281px;
+  height: 392px;
+}
+
+.picbox4 {
+  width: 280px;
+  height: 187px;
+  margin: 13px 13px 0 0;
+}
+
+.picbox5 {
+  width: 280px;
+  height: 188px;
+  margin: 13px 13px 0 0;
+}
+
+.picbox6 {
+  width: 575px;
+  height: 390px;
+  margin: 13px 0 0 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-position: c\r;
+}
+
+/* 快速、健康、驚喜 */
+.little {
+  width: 850px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+
+/* ----------------- 品牌故事 ---------------------- */
+.story {
+  width: 850px;
+  margin: 0 auto;
+}
+
+/* ------------------- 美味城市 ---------------------- */
+.delicious {
+  /* width: 850px; */
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-btns {
+  margin-bottom: 50px;
+}
+
+.bottom-btn {
+  width: 95px;
+  height: 50px;
+  border: 1px solid #c1d969;
+  background-color: white;
+  line-height: 50px;
+  padding: 0 25px;
+  font-size: 20px;
+  color: #000000;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: auto 25px;
+}
+
+iframe {
+  width: 850px;
+}
+
+.bottom-btn:hover {
+  background-color: #c1d969;
+}

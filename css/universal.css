@@ -1,0 +1,147 @@
+@import url(reset.css);
+
+body {
+  font-family: "NotoSansTC", sans-serif;
+  box-sizing: border-box;
+}
+
+/* ----------------------- header ------------------------------- */
+.top {
+  height: 100px;
+  display: flex;
+}
+
+.top img {
+  margin: 10px 0px;
+}
+
+.top ul {
+  display: flex;
+  margin-left: auto;
+}
+
+.top ul li {
+  margin-right: 74px;
+}
+
+.top a {
+  text-decoration: none;
+  display: block;
+  color: #000000;
+  line-height: 30px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.top a:hover {
+  border-bottom: 3px solid orange;
+}
+
+/* 快速開始、精選商家、品牌故事、美味城市 標題 */
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 850px;
+  height: 56px;
+  margin: 50px auto;
+}
+
+.title-line {
+  width: 270px;
+  height: 2px;
+  background-color: #c17b3a;
+  margin: 50px 0;
+}
+
+h2 {
+  font-size: 39px;
+  color: #000000;
+  margin: 60px;
+}
+
+.title-rline {
+  width: 270px;
+  height: 2px;
+  background-color: #c17b3a;
+  margin: 50px 0;
+}
+
+.letgo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 850px;
+  margin: 0 auto;
+}
+
+/* ---------------------------- footer ---------------------------- */
+.foot {
+  display: flex;
+  width: 100%;
+  /* height: 200px; */
+  position: relative;
+  box-sizing: border-box;
+}
+
+.foot > img {
+  width: 207px;
+  height: 77px;
+  margin-top: 62px;
+  margin-left: 74px;
+}
+
+nav {
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  width: 333px;
+  margin: 85px auto;
+}
+
+nav ul li {
+  flex-grow: 1;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+}
+
+.rthings {
+  box-sizing: border-box;
+  margin-right: 98px;
+}
+
+.rthings p {
+  padding-top: 20px;
+}
+
+.links img {
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
+  padding-right: 30px;
+}
+
+.link img:last-child {
+  width: 30px;
+  height: 20px;
+}
+
+/* ---------------------------------- TOP fixed ----------------------------------- */
+.topFixed {
+  position: relative;
+}
+
+.topFixed img {
+  position: fixed;
+  right: 0;
+  bottom: 20%;
+  z-index: 2;
+  width: 3vw;
+}
