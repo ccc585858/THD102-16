@@ -59,6 +59,8 @@ h2 {
   font-size: 39px;
   color: #000000;
   margin: 60px;
+  letter-spacing: 5px;
+  text-align: center;
 }
 
 .title-rline {
