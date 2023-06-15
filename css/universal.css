@@ -100,18 +100,19 @@ nav {
 
 nav ul {
   display: flex;
-  width: 333px;
+  width: 100%;
   margin: 85px auto;
 }
 
 nav ul li {
-  flex-grow: 1;
+  margin: 0 30px;
 }
 
 nav a {
   text-decoration: none;
   color: #000000;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .rthings {
