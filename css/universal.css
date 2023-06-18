@@ -21,8 +21,8 @@ body {
 }
 
 .top ul li {
-  margin-right: 50px;
-  width: 150px;
+  margin-right: 75px;
+  /* width: 150px; */
   line-height: 50px;
 }
 
@@ -31,10 +31,9 @@ body {
   display: block;
   color: #000000;
   text-align: center;
-  width: 100%;
 }
 
-.top a:hover {
+.top li a:hover {
   background-color: rgba(193, 123, 58, 0.2);
 }
 

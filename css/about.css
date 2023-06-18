@@ -47,6 +47,7 @@
   color: #333;
   text-align: center;
   margin-bottom: 50px;
+  letter-spacing: 2px;
 }
 
 .bigpic p {
@@ -54,8 +55,10 @@
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+  letter-spacing: 2px;
   line-height: 1.4;
 }
+
 .bigpic span {
   color: #3a6b35;
 }
