@@ -21,7 +21,7 @@ body {
 }
 .bigpic {
   background-size: cover;
-  height: 1000px;
+  height: calc(100% - 100px);
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@ body {
 
 .filter {
   width: 100%;
-  height: 1000px;
+  height: 100%;
   background-color: rgba(239, 237, 240, 0.6);
   position: absolute;
   top: 0;
@@ -51,6 +51,7 @@ body {
   font-weight: bold;
   color: #333;
   text-align: center;
+  margin-top: 100px;
   margin-bottom: 50px;
   letter-spacing: 2px;
 }
@@ -93,11 +94,12 @@ section .start {
   background-color: #c1d969;
   padding: 20px 30px;
   font-size: 20px;
-  color: #000000;
+  color: #333;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 /* ------------------------ 快速開始 ------------------------------ */
