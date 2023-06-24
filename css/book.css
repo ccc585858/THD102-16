@@ -77,7 +77,7 @@
   margin: 50px 0;
 }
 
-.main i {
+.main .fa-magnifying-glass {
   position: absolute;
   left: 20px;
   top: calc(50% - 0.5em);
@@ -108,7 +108,7 @@
   justify-content: center;
 }
 
-.cards {
+.upcards {
   display: flex;
   width: 70%;
   justify-content: center;
@@ -116,17 +116,17 @@
   height: 100%;
 }
 
-.list .card:nth-child(n + 1) {
+.list .upcard:nth-child(n + 1) {
   margin-left: 20px;
 }
 
-.card {
+.upcard {
   margin-top: 50px;
   position: relative;
   height: 385px;
 }
 
-.card img {
+.upcard img {
   margin-bottom: 20px;
 }
 
@@ -166,24 +166,63 @@
 /* -------------------------------- 商業合作 -------------------------- */
 .bookmid {
   display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
 }
 
-.Larrow {
-  margin-right: 50px;
+.bookmid i {
+  font-size: 35px;
   width: 50px;
+  color: #c17b3a;
+  padding: 30px;
 }
 
-.Rarrow {
+.bookmid .fa-circle-arrow-right {
   margin-left: 50px;
   width: 50px;
+  float: right;
 }
 
 .bookmid .cards {
   display: flex;
-  width: 1320px;
+  width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
   height: 100%;
+}
+
+.bookmid .cards .card {
+  width: 23%;
+  min-width: 310px;
+}
+
+.bookmid .cards .card img {
+  width: 100%;
+}
+
+.bookmid .cards .card .message {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.message p:nth-child(1) {
+  color: #333;
+  font-size: 16px;
+}
+
+.message p:nth-child(2) {
+  font-size: 12px;
+  color: #767676;
+}
+
+.card p:last-child {
+  font-size: 12px;
+  color: #767676;
+  font-weight: bold;
 }
 
 /* ----------------------------------- 本月之星 ----------------------------------- */
