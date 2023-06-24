@@ -67,7 +67,7 @@
   margin-bottom: 200px;
 }
 .bigpic span {
-  color: #3a6b35;
+  color: #32b121;
 }
 
 /* -------------------------- 清單列 ------------------------------------ */
@@ -180,7 +180,6 @@
 }
 
 .bookmid .fa-circle-arrow-right {
-  margin-left: 50px;
   width: 50px;
   float: right;
 }
@@ -189,7 +188,6 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  flex-wrap: wrap;
   height: 100%;
 }
 

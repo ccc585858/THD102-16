@@ -58,7 +58,7 @@
   margin-bottom: 200px;
 }
 .bigpic span {
-  color: #3a6b35;
+  color: #32b121;
 }
 
 /* ----------------------------------------- main -------------------------------------- */
@@ -280,6 +280,7 @@ a .ios,
   color: #756e6e;
   text-align: center;
   padding: 0 60px;
+  line-height: 1.6;
 }
 
 .button .iosright {
