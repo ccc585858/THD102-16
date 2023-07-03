@@ -8,36 +8,28 @@
 }
 
 /* -------------------------- 中間大圖 -------------------*/
-.indexpic {
-  position: relative;
-}
-
-.indexpic__img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.homebig {
+  background: url(../pic/book.jpg);
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.bigpic {
-  height: calc(100% - 100px);
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0.8;
+}
+
+.bigpic {
   position: relative;
-  z-index: 0;
 }
 
 .filter {
   width: 100%;
   height: 100%;
-  background-color: rgba(239, 237, 240, 0.6);
+  background-color: rgba(202, 202, 202, 0.3);
   position: absolute;
-  top: 0;
   z-index: -1;
 }
 
@@ -68,6 +60,7 @@
 }
 .bigpic span {
   color: #32b121;
+  font-size: 25px;
 }
 
 /* -------------------------- 清單列 ------------------------------------ */
@@ -75,6 +68,9 @@
   position: relative;
   display: inline-block;
   margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main .fa-magnifying-glass {
@@ -87,8 +83,21 @@
 
 .user input {
   text-indent: 60px;
-  width: 543px;
-  height: 75px;
+  width: 40vw;
+  height: 8vh;
+  font-size: 16px;
+}
+
+.favorite {
+  display: flex;
+  margin-left: -150px;
+  cursor: pointer;
+}
+
+.favorite h5 {
+  font-size: 16px;
+  color: #333;
+  margin: 0 30px;
 }
 
 .mainpicture {
@@ -193,7 +202,7 @@
 
 .bookmid .cards .card {
   width: 23%;
-  min-width: 310px;
+  min-width: 200px;
 }
 
 .bookmid .cards .card img {
@@ -231,7 +240,12 @@
   align-items: center;
   margin-bottom: 100px;
   letter-spacing: 0.1em;
-  width: 40vw;
+  max-width: 850px;
+}
+
+.star img {
+  max-width: 850px;
+  width: 50vw;
 }
 
 .star h3 {

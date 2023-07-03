@@ -8,6 +8,7 @@ body {
 /* ----------------------- header ------------------------------- */
 .top {
   display: flex;
+  width: 100%;
 }
 
 .top img {
@@ -22,8 +23,7 @@ body {
 
 .top ul li {
   flex-grow: 1;
-  line-height: 50px;
-  padding: 25px 50px;
+  padding: 42px 25px;
 }
 
 .top ul li a {
@@ -43,40 +43,55 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 850px;
+  /* width: 850px; */
   height: 56px;
   margin: 50px auto;
+  position: relative;
 }
 
-.title-line {
+/* .title-line {
   width: 270px;
   height: 2px;
   background-color: #c17b3a;
   margin: 50px 0;
-}
+} */
 
 h2 {
   font-size: 39px;
   color: #5e5e5e;
-  margin: 60px;
+  margin: 50px;
   letter-spacing: 5px;
   text-align: center;
 }
 
-.title-rline {
+.title > h2::before {
+  content: "";
+  width: 270px;
+  height: 2px;
+  /* bottom: 0;
+  right: 0; */
+  background-color: #c17b3a;
+  position: absolute;
+  top: 30px;
+  left: -250px;
+}
+
+.title > h2::after {
+  content: "";
+  width: 270px;
+  height: 2px;
+  background-color: #c17b3a;
+  position: absolute;
+  top: 30px;
+  right: -250px;
+}
+
+/* .title-rline {
   width: 270px;
   height: 2px;
   background-color: #c17b3a;
   margin: 50px 0;
-}
-
-.letgo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 850px;
-  margin: 0 auto;
-}
+} */
 
 /* ---------------------------- footer ---------------------------- */
 .foot {

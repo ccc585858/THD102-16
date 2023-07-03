@@ -1,34 +1,26 @@
 /* -------------------------- 中間大圖 -------------------*/
-.indexpic {
-  position: relative;
-}
-
-.indexpic__img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.homebig {
+  background: url(../pic/news.jpg);
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.bigpic {
-  height: calc(100% - 100px);
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0.8;
+}
+
+.bigpic {
   position: relative;
-  z-index: 0;
 }
 
 .filter {
   width: 100%;
   height: 100%;
-  background-color: rgba(239, 237, 240, 0.6);
+  background-color: rgba(202, 202, 202, 0.3);
   position: absolute;
-  top: 0;
   z-index: -1;
 }
 
@@ -64,9 +56,13 @@
 
 /* -------------------------- 最新消息 ----------------------------------------- */
 main {
-  width: 950px;
+  /* max-width: 850px;
   margin: 0 auto;
-  box-sizing: border-box;
+  box-sizing: border-box; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .new {
@@ -77,6 +73,7 @@ main {
   line-height: 1.6;
   margin-top: 50px;
   margin-bottom: 50px;
+  max-width: 850px;
 }
 
 .new a {
