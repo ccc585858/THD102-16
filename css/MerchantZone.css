@@ -184,6 +184,7 @@
 .bottom {
   display: flex;
   justify-content: center;
+  max-width: 850px;
 }
 
 .backend {
@@ -195,7 +196,9 @@
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  margin-left: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 .button {
@@ -321,23 +324,47 @@ a .iosright {
 
 /* -------------------------------------- 加入我們 ----------------------------------- */
 
-.welcome {
-  max-width: 900px;
-  margin: 100px auto;
-  display: flex;
-  justify-content: space-between;
-}
-
 .joinUs,
 .readMore {
-  display: flex;
+  /* display: flex;
   width: 300px;
   height: 65px;
+  margin-left: 25px; */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #333;
-  margin-left: 25px;
 }
 
-.welcome a,
+.leftSection__bottom,
+.rightSection__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSection__bottom a,
+.rightSection__bottom a {
+  display: flex;
+  margin: 20px auto;
+  font-size: 39px;
+  color: #333333;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.leftSection__bottom a i,
+.rightSection__bottom a i {
+  transition: all 1.5s;
+}
+
+.leftSection__bottom a h6,
+.rightSection__bottom a h6 {
+  padding-right: 50px;
+}
+
+/* .leftSection .joinUs a,
 i {
   display: flex;
   margin: 20px auto;
@@ -345,12 +372,13 @@ i {
   text-decoration: none;
   color: #333333;
   transition: all 1.5s;
-}
+} */
 
-.welcome a h6 {
+/* .leftSection a h6 {
   margin-right: 100px;
-}
+} */
 
-.welcome a:hover i {
+.leftSection__bottom a:hover i,
+.rightSection__bottom a:hover i {
   transform: translate(100%);
 }

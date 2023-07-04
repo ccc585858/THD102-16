@@ -188,7 +188,7 @@ section .start {
 .pic-boxs {
   margin: 0 auto;
   display: grid;
-  width: 40vw;
+  width: 60vw;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 10px;
@@ -312,4 +312,11 @@ iframe {
 
 .bottom-btn:hover {
   background-color: #c1d969;
+}
+
+/* ====================== RWD ================================== */
+@media screen and (max-width: 414px) {
+  .pic-boxs {
+    width: 80vw;
+  }
 }
