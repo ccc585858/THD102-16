@@ -67,7 +67,6 @@
 
 .user {
   position: relative;
-  display: inline-block;
 }
 
 .midFaq .fa-magnifying-glass {
@@ -81,7 +80,7 @@
 .user input {
   text-indent: 35px;
   width: 59vw;
-  height: 10vh;
+  height: 6vh;
   margin: 50px 0;
 }
 
@@ -104,13 +103,13 @@
   margin-bottom: 50px;
 }
 
-.question {
+/* .question {
   width: 59vw;
-  box-shadow: 0 0 10px rgba(193, 128, 53, 0.25);
   height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 0 10px rgba(193, 128, 53, 0.25);
 }
 
 .question i,
@@ -129,7 +128,7 @@
 }
 
 .answer {
-  /* display: none; */
+  display: none;
   box-shadow: 0 0 10px rgba(193, 128, 53, 0.25);
   width: 59vw;
 }
@@ -141,4 +140,94 @@
   padding: 40px;
   line-height: 1.6;
   letter-spacing: 1px;
+} */
+
+.accordion {
+  /* width: 60%; */
+  /* margin: 100px auto 0 auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordion-header {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+  color: #333;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-header:hover {
+  transition: all 0.6s;
+  background-color: #c17b3a;
+  color: #fff;
+}
+
+.accordion-header:hover::after {
+  color: #fff;
+}
+
+.accordion-item.active .accordion-header {
+  font-size: 18px;
+  padding: 20px;
+  /* background-color: wheat; */
+  background-color: #c17b3a;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+}
+.accordion-header::after {
+  content: "\002B";
+  color: #333;
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-header::after {
+  color: #fff;
+  transform: rotate(45deg);
+}
+
+.accordion-item {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(193, 128, 53, 0.25);
+  overflow: hidden;
+  width: 59vw;
+}
+
+.accordion-item.active {
+  /* border: 2px solid wheat; */
+  box-shadow: 0 0 10px rgba(193, 128, 53, 0.25);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  /* box-shadow: none; */
+  /* width: 59vw; */
+  /* height: 10vh; */
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  padding: 20px 50px 20px 50px;
+  display: none;
+  box-shadow: 0 0 10px rgba(193, 128, 53, 0.25);
+}
+
+.font {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion-content p {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #756e6e;
+  line-height: 1.6;
 }
