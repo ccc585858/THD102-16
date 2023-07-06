@@ -96,11 +96,12 @@ section .start {
 
 /* ------------------------ 快速開始 ------------------------------ */
 .letgo {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   margin: 0 auto;
-  max-width: 850px;
+  max-width: 890px;
+  padding: 0 20px;
 }
 
 .letgo p,
@@ -113,7 +114,7 @@ section .start {
 }
 
 .cards {
-  width: 760px;
+  max-width: 760px;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -122,6 +123,8 @@ section .start {
   counter-reset: my-awesome-counter;
   margin-top: 50px;
   margin-bottom: 115px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* .card:nth-child(2n + 1) {
@@ -175,20 +178,30 @@ section .start {
 /* --------------------------------- 精選商家 ---------------------------------- */
 
 .store {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   background-color: #efedf0;
-  margin-bottom: 115px;
   /* height: 1015px; */
-  margin: 0 auto;
+  /* margin: 0 auto;
+  margin: 0 auto; */
+  /* max-width: 890px; */
+  padding: 0 20px;
+}
+
+.big_store {
+  max-width: 890px;
+  margin: auto;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .pic-boxs {
   margin: 0 auto;
   display: grid;
-  width: 60vw;
+  width: 100%;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 10px;
@@ -272,24 +285,29 @@ section .start {
 
 /* ----------------- 品牌故事 ---------------------- */
 .story {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
+  align-items: center; */
   max-width: 850px;
+  margin: 0 auto;
+  max-width: 890px;
+  padding: 0 20px;
 }
 
 /* ------------------- 美味城市 ---------------------- */
 .delicious {
   /* width: 850px; */
-  margin: 50px auto;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
+  margin: 0 auto;
+  max-width: 890px;
+  padding: 0 20px;
 }
 
 .bottom-btns {
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .bottom-btn {
@@ -297,17 +315,18 @@ section .start {
   height: 50px;
   border: 1px solid #c1d969;
   background-color: white;
-  line-height: 50px;
   padding: 0 25px;
   font-size: 20px;
   color: #000000;
   border-radius: 10px;
   cursor: pointer;
-  margin: auto 25px;
+  margin: auto 15px;
 }
 
 iframe {
   width: 850px;
+  display: block;
+  max-width: 0 auto;
 }
 
 .bottom-btn:hover {
@@ -315,6 +334,9 @@ iframe {
 }
 
 /* ====================== RWD ================================== */
+@media screen and (max-width) {
+}
+
 @media screen and (max-width: 414px) {
   .pic-boxs {
     width: 80vw;

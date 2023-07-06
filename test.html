@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      /* html,
+      body {
+        position: relative;
+        height: 100%;
+      } */
+
+      /* body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      } */
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* .swiper-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      } */
+
+      .swiper-slide {
+        /* text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; */
+        width: 23%;
+        min-width: 200px;
+        /* display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center; */
+      }
+
+      .swiper-slide .message {
+        /* display: flex;
+        justify-content: space-between;
+        align-items: center; */
+        /* margin: 15px 0; */
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .message p:nth-child(1) {
+        color: #333;
+        font-size: 16px;
+      }
+
+      .message p:nth-child(2) {
+        font-size: 12px;
+        color: #767676;
+      }
+
+      .swiper-slide p:last-child {
+        font-size: 12px;
+        color: #767676;
+        font-weight: bold;
+      }
+
+      .swiper-slide img {
+        /* display: block; */
+        width: 100%;
+        /* height: 100%;
+        object-fit: cover; */
+      }
+
+      .swiper-pagination {
+        position: relative;
+        margin-top: 50px;
+      }
+
+      .swiper-button-next i,
+      .swiper-button-prev i {
+        font-size: 35px;
+        color: #c17b3a;
+      }
+
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+        display: none;
+      }
+
+      /* 輪播小點 */
+      .swiper-pagination-bullet-active {
+        background: #c17b3a;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./pic/蔬食早晨寶盒.svg" alt="" />
+          <div class="message">
+            <p class="cardTexts">蔬食早晨寶盒</p>
+            <p class="cardTexts">$150~200</p>
+          </div>
+          <p class="cardTexts">$30 外送服務費</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./pic/蔬食源.svg" alt="" />
+          <div class="message">
+            <p class="cardTexts">蔬食源</p>
+            <p class="cardTexts">$150~200</p>
+          </div>
+          <p class="cardTexts">$30 外送服務費</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./pic/蔬食源.svg" alt="" />
+          <div class="message">
+            <p class="cardTexts">蔬食源</p>
+            <p class="cardTexts">$150~200</p>
+          </div>
+          <p class="cardTexts">$30 外送服務費</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./pic/蔬食源.svg" alt="" />
+          <div class="message">
+            <p class="cardTexts">蔬食源</p>
+            <p class="cardTexts">$150~200</p>
+          </div>
+          <p class="cardTexts">$30 外送服務費</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./pic/蔬食源.svg" alt="" />
+          <div class="message">
+            <p class="cardTexts">蔬食源</p>
+            <p class="cardTexts">$150~200</p>
+          </div>
+          <p class="cardTexts">$30 外送服務費</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./pic/蔬食源.svg" alt="" />
+          <div class="message">
+            <p class="cardTexts">蔬食源</p>
+            <p class="cardTexts">$150~200</p>
+          </div>
+          <p class="cardTexts">$30 外送服務費</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./pic/蔬食源.svg" alt="" />
+          <div class="message">
+            <p class="cardTexts">蔬食源</p>
+            <p class="cardTexts">$150~200</p>
+          </div>
+          <p class="cardTexts">$30 外送服務費</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./pic/蔬食源.svg" alt="" />
+          <div class="message">
+            <p class="cardTexts">蔬食源</p>
+            <p class="cardTexts">$150~200</p>
+          </div>
+          <p class="cardTexts">$30 外送服務費</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./pic/蔬食源.svg" alt="" />
+          <div class="message">
+            <p class="cardTexts">蔬食源</p>
+            <p class="cardTexts">$150~200</p>
+          </div>
+          <p class="cardTexts">$30 外送服務費</p>
+        </div>
+      </div>
+      <div class="swiper-button-next">
+        <i class="fa-solid fa-circle-arrow-right"> </i>
+      </div>
+      <div class="swiper-button-prev">
+        <i class="fa-solid fa-circle-arrow-left"></i>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 50,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
