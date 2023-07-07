@@ -13,6 +13,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
     <link rel="shortcut icon" href="./pic/mark.png" />
     <link rel="bookmark" href="./pic/mark.png" />
     <link rel="stylesheet" href="./css/book.css" />
@@ -22,7 +27,7 @@
     <!-- 上欄位 -->
     <header>
       <div class="top">
-        <a href="./index.html"><img src="./pic/LOGO.svg" alt="" /></a>
+        <a href="./index.html"><img src="./pic/LOGO3.svg" alt="" /></a>
 
         <ul>
           <li><a href="./aboutus.html">關於我們</a></li>
@@ -52,19 +57,10 @@
     </section>
 
     <!-- main -->
-    <div class="main">
+    <div class="user_list">
       <div class="user">
-        <label>
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input
-            type="text"
-            name=""
-            id=""
-            class="text"
-            placeholder="搜尋店家"
-          />
-          <!-- <img src="./pic/喜好.svg" class="mainpicture" alt="" /> -->
-        </label>
+        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+        <input type="text" name="" id="" class="text" placeholder="搜尋店家" />
         <div class="favorite">
           <h5>喜好</h5>
           <i class="fa-solid fa-chevron-down" style="color: #c17b3a"></i>
@@ -75,90 +71,116 @@
         <div class="upcards">
           <div class="upcard">
             <img src="./pic/蔬食天堂.svg" alt="" />
-            <p class="cardText">蔬食天堂</p>
-            <p class="cardText">$150~200</p>
+            <div class="mes">
+              <p class="cardText">蔬食天堂</p>
+              <p class="cardText">$150~200</p>
+            </div>
             <p class="cardText">$30 外送服務費</p>
           </div>
           <div class="upcard">
             <img src="./pic/味覺狂想.svg" alt="" />
-            <p class="cardText">味覺狂想</p>
-            <p class="cardText">$150~200</p>
+            <div class="mes">
+              <p class="cardText">味覺狂想</p>
+              <p class="cardText">$150~200</p>
+            </div>
             <p class="cardText">$30 外送服務費</p>
           </div>
           <div class="upcard">
             <img src="./pic/綠意意粉坊.svg" alt="" />
-            <p class="cardText">綠意意粉坊</p>
-            <p class="cardText">$250~300</p>
-            <p class="cardText">$30 外送服務費</p>
+            <div class="mes">
+              <p>綠意意粉坊</p>
+              <p>$250~300</p>
+            </div>
+            <p>$30 外送服務費</p>
           </div>
           <div class="upcard">
             <img src="./pic/健康生活餐.svg" alt="" />
-            <p class="cardText">健康生活餐</p>
-            <p class="cardText">$150~200</p>
-            <p class="cardText">$30 外送服務費</p>
+            <div class="mes">
+              <p>健康生活餐</p>
+              <p>$150~200</p>
+            </div>
+            <p>$30 外送服務費</p>
           </div>
           <div class="upcard">
             <img src="./pic/綠野漢堡樂園.svg" alt="" />
-            <p class="cardText">綠野漢堡樂園</p>
-            <p class="cardText">$100~200</p>
-            <p class="cardText">$30 外送服務費</p>
+            <div class="mes">
+              <p>綠野漢堡樂園</p>
+              <p>$100~200</p>
+            </div>
+            <p>$30 外送服務費</p>
           </div>
           <div class="upcard">
             <img src="./pic/晨光綠意.svg" alt="" />
-            <p class="cardText">晨光綠意</p>
-            <p class="cardText">$100~150</p>
-            <p class="cardText">$30 外送服務費</p>
+            <div class="mes">
+              <p>晨光綠意</p>
+              <p>$100~150</p>
+            </div>
+            <p>$30 外送服務費</p>
           </div>
           <div class="upcard">
             <img src="./pic/綠意義式披薩坊.svg" alt="" />
-            <p class="cardText">綠意義式披薩坊</p>
-            <p class="cardText">$300~500</p>
-            <p class="cardText">$30 外送服務費</p>
+            <div class="mes">
+              <p>綠意義式披薩坊</p>
+              <p>$300~500</p>
+            </div>
+            <p>$30 外送服務費</p>
           </div>
           <div class="upcard">
             <img src="./pic/素味香坊.svg" alt="" />
-            <p class="cardText">素味香坊</p>
-            <p class="cardText">$250~350</p>
-            <p class="cardText">$30 外送服務費</p>
+            <div class="mes">
+              <p>素味香坊</p>
+              <p>$250~350</p>
+            </div>
+            <p>$30 外送服務費</p>
           </div>
           <div class="upcard">
             <img src="./pic/蔬食早晨寶盒.svg" alt="" />
-            <p class="cardText">蔬食早晨寶盒</p>
-            <p class="cardText">$150~200</p>
-            <p class="cardText">$30 外送服務費</p>
+            <div class="mes">
+              <p>蔬食早晨寶盒</p>
+              <p>$150~200</p>
+            </div>
+            <p>$30 外送服務費</p>
           </div>
           <div class="upcard">
             <img src="./pic/蔬食源.svg" alt="" />
-            <p class="cardText">蔬食源</p>
-            <p class="cardText">$150~200</p>
-            <p class="cardText">$30 外送服務費</p>
+            <div class="mes">
+              <p>蔬食源</p>
+              <p>$150~200</p>
+            </div>
+            <p class="cardTexts">$30 外送服務費</p>
           </div>
           <div class="upcard">
             <img src="./pic/味境.svg" alt="" />
-            <p class="cardText">味境</p>
-            <p class="cardText">$150~300</p>
-            <p class="cardText">$30 外送服務費</p>
+            <div class="mes">
+              <p>味境</p>
+              <p>$150~300</p>
+            </div>
+            <p>$30 外送服務費</p>
           </div>
           <div class="upcard">
             <img src="./pic/綠野晨曦.svg" alt="" />
-            <p class="cardText">綠野晨曦</p>
-            <p class="cardText">$150~200</p>
-            <p class="cardText">$30 外送服務費</p>
+            <div class="mes">
+              <p>綠野晨曦</p>
+              <p>$150~200</p>
+            </div>
+            <p>$30 外送服務費</p>
           </div>
         </div>
       </div>
+      <div class="choose_btn">
+        <button class="start">立即訂餐</button>
+      </div>
+    </div>
 
-      <button class="start">立即訂餐</button>
-
-      <!-- 商業合作   -->
+    <!-- 商業合作   -->
+    <section class="cooperate">
       <div class="title">
         <h2>商業合作</h2>
       </div>
 
-      <div class="bookmid">
-        <i class="fa-solid fa-circle-arrow-left"></i>
-        <div class="cards">
-          <div class="card">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper" id="swiper_wrapper">
+          <div class="swiper-slide">
             <img src="./pic/蔬食早晨寶盒.svg" alt="" />
             <div class="message">
               <p class="cardTexts">蔬食早晨寶盒</p>
@@ -166,7 +188,7 @@
             </div>
             <p class="cardTexts">$30 外送服務費</p>
           </div>
-          <div class="card">
+          <div class="swiper-slide">
             <img src="./pic/蔬食源.svg" alt="" />
             <div class="message">
               <p class="cardTexts">蔬食源</p>
@@ -174,7 +196,7 @@
             </div>
             <p class="cardTexts">$30 外送服務費</p>
           </div>
-          <div class="card">
+          <div class="swiper-slide">
             <img src="./pic/味境.svg" alt="" />
             <div class="message">
               <p class="cardTexts">味境</p>
@@ -182,7 +204,7 @@
             </div>
             <p class="cardTexts">$30 外送服務費</p>
           </div>
-          <div class="card">
+          <div class="swiper-slide">
             <img src="./pic/綠野晨曦.svg" alt="" />
             <div class="message">
               <p class="cardTexts">綠野晨曦</p>
@@ -190,57 +212,71 @@
             </div>
             <p class="cardTexts">$30 外送服務費</p>
           </div>
-          <div class="card">
-            <img src="./pic/綠野晨曦.svg" alt="" />
+          <div class="swiper-slide">
+            <img src="./pic/綠野漢堡樂園.svg" alt="" />
             <div class="message">
-              <p class="cardTexts">綠野晨曦</p>
+              <p class="cardTexts">綠野漢堡樂園</p>
+              <p class="cardTexts">$100~200</p>
+            </div>
+            <p class="cardTexts">$30 外送服務費</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="./pic/素味香坊.svg" alt="" />
+            <div class="message">
+              <p class="cardTexts">素味香坊</p>
+              <p class="cardTexts">$250~350</p>
+            </div>
+            <p class="cardTexts">$30 外送服務費</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="./pic/綠意義式披薩坊.svg" alt="" />
+            <div class="message">
+              <p class="cardTexts">綠意義式披薩坊</p>
+              <p class="cardTexts">$300~500</p>
+            </div>
+            <p class="cardTexts">$30 外送服務費</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="./pic/健康生活餐.svg" alt="" />
+            <div class="message">
+              <p class="cardTexts">健康生活餐</p>
               <p class="cardTexts">$150~200</p>
             </div>
             <p class="cardTexts">$30 外送服務費</p>
           </div>
-          <div class="card">
-            <img src="./pic/綠野晨曦.svg" alt="" />
+          <div class="swiper-slide">
+            <img src="./pic/味覺狂想.svg" alt="" />
             <div class="message">
-              <p class="cardTexts">綠野晨曦</p>
-              <p class="cardTexts">$150~200</p>
-            </div>
-            <p class="cardTexts">$30 外送服務費</p>
-          </div>
-          <div class="card">
-            <img src="./pic/綠野晨曦.svg" alt="" />
-            <div class="message">
-              <p class="cardTexts">綠野晨曦</p>
-              <p class="cardTexts">$150~200</p>
-            </div>
-            <p class="cardTexts">$30 外送服務費</p>
-          </div>
-          <div class="card">
-            <img src="./pic/綠野晨曦.svg" alt="" />
-            <div class="message">
-              <p class="cardTexts">綠野晨曦</p>
+              <p class="cardTexts">味覺狂想</p>
               <p class="cardTexts">$150~200</p>
             </div>
             <p class="cardTexts">$30 外送服務費</p>
           </div>
         </div>
-        <i class="fa-solid fa-circle-arrow-right"></i>
+        <div class="swiper-button-next">
+          <i class="fa-solid fa-circle-arrow-right"> </i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="fa-solid fa-circle-arrow-left"></i>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
       </div>
+    </section>
 
-      <!-- 本月之星  -->
+    <!-- 本月之星  -->
+    <section class="star">
       <div class="title">
         <h2>本月之星</h2>
       </div>
-      <section class="star">
-        <img src="./pic/本月之星.svg" alt="" />
+      <img src="./pic/本月之星.svg" alt="" />
 
-        <h3>食界</h3>
-        <h4>
-          探索美食的無盡邊界，盡在食界。品味創新與傳統的完美融合，呈現令人驚嘆的味覺盛宴。在食界，每一道
-          菜肴都是一場奇妙的冒險，讓您的味蕾盡情漫遊。無論是烹飪技藝的精湛還是食材的精心挑選，我們將為您
-          帶來獨一無二的美食體驗。歡迎來到食界，發現美食世界的新視界。
-        </h4>
-      </section>
-    </div>
+      <h3>食界</h3>
+      <h4>
+        探索美食的無盡邊界，盡在食界。品味創新與傳統的完美融合，呈現令人驚嘆的味覺盛宴。在食界，每一道
+        菜肴都是一場奇妙的冒險，讓您的味蕾盡情漫遊。無論是烹飪技藝的精湛還是食材的精心挑選，我們將為您
+        帶來獨一無二的美食體驗。歡迎來到食界，發現美食世界的新視界。
+      </h4>
+    </section>
 
     <footer>
       <div class="foot">
@@ -275,5 +311,28 @@
         師專業技術養成班學員作品,僅供學習、展示之用途。
       </p>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 50,
+        loop: true,
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+        // centeredSlides: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script src="./js/header.js"></script>
   </body>
 </html>

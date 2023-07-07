@@ -8,22 +8,24 @@ body {
 /* ----------------------- header ------------------------------- */
 .top {
   display: flex;
+  width: 100%;
+  align-items: center;
+  /* box-shadow: 10px 5px 5px rgba(59, 58, 58, 0.4); */
+}
+
+.top.active > ul {
+  display: block;
 }
 
 .top img {
-  margin: 10px 0px;
+  margin: 8px 0px 8px 30px;
 }
 
 .top ul {
   display: flex;
   margin-left: auto;
-  align-items: center;
-}
-
-.top ul li {
-  flex-grow: 1;
-  line-height: 50px;
-  padding: 25px 50px;
+  /* align-items: center; */
+  line-height: 100px;
 }
 
 .top ul li a {
@@ -31,12 +33,42 @@ body {
   display: block;
   color: #333;
   text-align: center;
+  padding: 0 30px;
 }
 
 .top li:hover {
   background-color: rgba(193, 123, 58, 0.2);
 }
 
+.hamburger_line {
+  width: 50px;
+  height: 6px;
+  background-color: #c17b3a;
+  position: relative;
+  border-radius: 5px;
+  /* display: none; */
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger_line::before,
+.hamburger_line::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #c17b3a;
+  transition: 0.5s;
+}
+
+.hamburger_line::before {
+  top: -16px;
+}
+
+.hamburger_line::after {
+  top: 16px;
+}
 /* ---------------------------------- TOP fixed ----------------------------------- */
 .topFixed {
   position: relative;
@@ -318,4 +350,30 @@ nav a {
 .link img:last-child {
   width: 30px;
   height: 20px;
+}
+
+/* RWD */
+@media screen and (max-width: 1200px) {
+  /* ============================ header ================================ */
+  .top > ul {
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    z-index: 3;
+    top: 100px;
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+
+  .top {
+    justify-content: space-between;
+  }
+
+  .hamburger_line {
+    display: block;
+    margin: 40px;
+  }
 }

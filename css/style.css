@@ -96,9 +96,6 @@ section .start {
 
 /* ------------------------ 快速開始 ------------------------------ */
 .letgo {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   margin: 0 auto;
   max-width: 890px;
   padding: 0 20px;
@@ -111,6 +108,7 @@ section .start {
   line-height: 29px;
   letter-spacing: 1px;
   color: #756e6e;
+  padding: 0 40px;
 }
 
 .cards {
@@ -178,15 +176,7 @@ section .start {
 /* --------------------------------- 精選商家 ---------------------------------- */
 
 .store {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   background-color: #efedf0;
-  /* height: 1015px; */
-  /* margin: 0 auto;
-  margin: 0 auto; */
-  /* max-width: 890px; */
   padding: 0 20px;
 }
 
@@ -257,14 +247,15 @@ section .start {
 
 /* 快速、健康、驚喜 */
 .little {
-  display: flex;
-  justify-content: center;
-  margin: 50px 0;
   box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 890px;
 }
 
 .little ul {
   display: flex;
+  justify-content: space-between;
 }
 
 .little ul li:nth-child(2) {
@@ -288,7 +279,6 @@ section .start {
   /* display: flex;
   flex-direction: column;
   align-items: center; */
-  max-width: 850px;
   margin: 0 auto;
   max-width: 890px;
   padding: 0 20px;
@@ -296,10 +286,6 @@ section .start {
 
 /* ------------------- 美味城市 ---------------------- */
 .delicious {
-  /* width: 850px; */
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   margin: 0 auto;
   max-width: 890px;
   padding: 0 20px;
@@ -324,9 +310,8 @@ section .start {
 }
 
 iframe {
-  width: 850px;
-  display: block;
-  max-width: 0 auto;
+  width: 100%;
+  height: 450px;
 }
 
 .bottom-btn:hover {
@@ -334,11 +319,25 @@ iframe {
 }
 
 /* ====================== RWD ================================== */
-@media screen and (max-width) {
+@media screen and (max-width: 775px) {
+  .little ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .little ul li:nth-child(2) {
+    margin: 30px;
+  }
+  .bottom-btn {
+    margin-bottom: 30px;
+  }
+  .cards {
+    justify-content: center;
+  }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 428px) {
   .pic-boxs {
-    width: 80vw;
+    width: 100%;
   }
 }
