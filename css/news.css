@@ -55,14 +55,11 @@
 }
 
 /* -------------------------- 最新消息 ----------------------------------------- */
-main {
-  /* max-width: 850px;
+
+.liveNews {
   margin: 0 auto;
-  box-sizing: border-box; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  max-width: 890px;
+  padding: 0 20px;
 }
 
 .new {
@@ -101,4 +98,16 @@ main {
 .leftText {
   margin-right: 50px;
   width: 450px;
+}
+
+/* ====================== RWD ================================== */
+@media screen and (max-width: 768px) {
+  .new {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rightText {
+    margin-left: 0;
+  }
 }

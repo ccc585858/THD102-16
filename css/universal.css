@@ -228,3 +228,59 @@ nav a {
     margin: 40px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  /* ======================== footer ===================================== */
+  nav {
+    display: none;
+  }
+
+  .rthings {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  /* ======================== 中間大圖 ===================================== */
+  .homebig {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  /* ======================== footer ===================================== */
+  .foot img {
+    margin-left: 20px;
+  }
+
+  .rthings {
+    padding: 0;
+    margin-right: 0;
+  }
+
+  .rthings h6 {
+    display: none;
+  }
+
+  .foot {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .links a img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .title > h2::before,
+  .title > h2::after {
+    display: none;
+  }
+
+  .title > h2 {
+    text-align: center;
+    display: block;
+    background-color: #fff2e5;
+    padding: 20px;
+    border-radius: 8px;
+  }
+}
