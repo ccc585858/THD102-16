@@ -73,10 +73,18 @@
   max-width: 850px;
 }
 
+.img_1 img {
+  width: 100%;
+}
+
+.img_2 img {
+  width: 100%;
+}
+
 .new a {
   display: block;
   text-decoration: none;
-  margin-top: 75px;
+  margin-top: 50px;
   width: 125px;
   height: 50px;
   font-weight: bold;
@@ -92,19 +100,42 @@
 
 .rightText {
   margin-left: 50px;
-  width: 450px;
+  width: 100%;
 }
 
 .leftText {
   margin-right: 50px;
-  width: 450px;
+  width: 100%;
+}
+
+/* -------------------------- 最新優惠 ----------------------------------------- */
+.Newdiscount {
+  margin: 0 auto;
+  max-width: 890px;
+  padding: 0 20px;
 }
 
 /* ====================== RWD ================================== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .new {
     display: flex;
     flex-direction: column;
+  }
+
+  .new:nth-child(odd) .leftText {
+    order: 2;
+  }
+
+  .new:nth-child(odd) .img_2 {
+    order: 1;
+  }
+
+  .Newdiscount .new:nth-child(even) .leftText {
+    order: 2;
+  }
+
+  .Newdiscount .new:nth-child(even) .img_2 {
+    order: 1;
   }
 
   .rightText {

@@ -10,12 +10,10 @@ body {
   display: flex;
   width: 100%;
   align-items: center;
-  /* box-shadow: 10px 5px 5px rgba(59, 58, 58, 0.4); */
 }
 
 .top.active > ul {
   display: block;
-  transition: all 2s;
 }
 
 .top img {
@@ -54,9 +52,7 @@ body {
   background-color: #c17b3a;
   position: relative;
   border-radius: 5px;
-  /* display: none; */
   cursor: pointer;
-  display: none;
 }
 
 .hamburger_line::before,
@@ -213,18 +209,22 @@ nav a {
 }
 
 /* RWD */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   /* ============================ header ================================ */
   .top > ul {
     display: none;
     flex-direction: column;
     position: absolute;
-    background-color: white;
+    background-color: rgba(249, 249, 249, 0.958);
     z-index: 3;
-    top: 100px;
+    top: 99px;
     width: 100%;
     font-size: 20px;
     letter-spacing: 3px;
+  }
+
+  .top > ul li {
+    border-bottom: 1px solid rgb(193, 128, 53);
   }
 
   .top {
@@ -253,7 +253,7 @@ nav a {
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 428px) {
   /* ======================== 中間大圖 ===================================== */
   .homebig {
     padding: 0 10px;
@@ -289,11 +289,15 @@ nav a {
     display: none;
   }
 
-  .title > h2 {
-    text-align: center;
-    display: block;
+  .title {
     background-color: #fff2e5;
-    padding: 20px;
     border-radius: 8px;
+    width: 100%;
+  }
+
+  .title > h2 {
+    /* text-align: center; */
+    display: block;
+    padding: 20px;
   }
 }

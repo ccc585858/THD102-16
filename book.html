@@ -29,11 +29,11 @@
       <div class="top">
         <a href="./index.html"><img src="./pic/LOGO3.svg" alt="" /></a>
 
-        <ul>
+        <ul class="droplist">
           <li><a href="./aboutus.html">關於我們</a></li>
           <li><a href="./book.html">馬上預訂</a></li>
           <li><a href="./news.html">最新消息</a></li>
-          <li><a href="./faq.html">FAQ</a></li>
+          <li><a href="./faq.html">常見問題</a></li>
           <li><a href="./MerchantZone.html">商家專區</a></li>
           <li><a href="#">會員登入</a></li>
         </ul>
@@ -44,6 +44,7 @@
         </div>
       </div>
     </header>
+
     <!-- TOP fixed -->
     <div class="topFixed">
       <img src="./pic/TOP.svg" alt="" />
@@ -255,12 +256,12 @@
             <p class="cardTexts">$30 外送服務費</p>
           </div>
         </div>
-        <div class="swiper-button-next">
+        <!-- <div class="swiper-button-next">
           <i class="fa-solid fa-circle-arrow-right"> </i>
         </div>
         <div class="swiper-button-prev">
           <i class="fa-solid fa-circle-arrow-left"></i>
-        </div>
+        </div> -->
         <!-- <div class="swiper-pagination"></div> -->
       </div>
     </section>
@@ -317,8 +318,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 40,
         loop: true,
         // pagination: {
         //   el: ".swiper-pagination",
@@ -332,6 +331,23 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          // when window width is >= 428px
+          428: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          // when window width is >= 1200px
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
         },
       });
     </script>
