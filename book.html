@@ -39,7 +39,9 @@
         </ul>
 
         <!-- 漢堡 -->
-        <div class="hamburger_line"></div>
+        <div class="hamburger">
+          <div class="hamburger_line"></div>
+        </div>
       </div>
     </header>
     <!-- TOP fixed -->
@@ -312,10 +314,11 @@
       </p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
-        spaceBetween: 50,
+        slidesPerView: 3,
+        spaceBetween: 40,
         loop: true,
         // pagination: {
         //   el: ".swiper-pagination",
@@ -332,7 +335,6 @@
         },
       });
     </script>
-
     <script src="./js/header.js"></script>
   </body>
 </html>
