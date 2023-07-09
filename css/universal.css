@@ -253,7 +253,7 @@ nav a {
   }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 440px) {
   /* ======================== 中間大圖 ===================================== */
   .homebig {
     padding: 0 10px;

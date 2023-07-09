@@ -71,6 +71,7 @@
   margin-top: 50px;
   margin-bottom: 50px;
   max-width: 850px;
+  font-weight: bold;
 }
 
 .img_1 img {
@@ -120,6 +121,7 @@
   .new {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .new:nth-child(odd) .leftText {
@@ -140,5 +142,22 @@
 
   .rightText {
     margin-left: 0;
+  }
+
+  .img_1 {
+    width: 80%;
+  }
+
+  .img_2 {
+    width: 80%;
+  }
+
+  .rightText {
+    width: 80%;
+  }
+
+  .leftText {
+    width: 80%;
+    margin-right: 0;
   }
 }
