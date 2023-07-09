@@ -93,7 +93,6 @@
   outline: none;
   padding: 24px 30px;
   font-size: 20px;
-  color: #c17b3a;
 }
 
 ::placeholder {
@@ -109,6 +108,7 @@
   border: 0;
   cursor: pointer;
   margin-right: 30px;
+  color: #c17b3a;
 }
 
 .favor {
