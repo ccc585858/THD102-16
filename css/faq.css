@@ -120,11 +120,11 @@
 }
 
 .search-bar button {
-  width: 25px;
-  background: white;
+  background: transparent;
   border: 0;
   cursor: pointer;
   margin-right: 30px;
+  color: #c17b3a;
 }
 
 .text {
