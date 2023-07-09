@@ -10,7 +10,6 @@ body {
   display: flex;
   width: 100%;
   align-items: center;
-  /* box-shadow: 10px 5px 5px rgba(59, 58, 58, 0.4); */
 }
 
 .top.active > ul {
@@ -40,15 +39,20 @@ body {
   background-color: rgba(193, 123, 58, 0.2);
 }
 
+.hamburger {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+
 .hamburger_line {
   width: 50px;
   height: 6px;
   background-color: #c17b3a;
   position: relative;
   border-radius: 5px;
-  /* display: none; */
   cursor: pointer;
-  display: none;
 }
 
 .hamburger_line::before,
@@ -84,23 +88,16 @@ body {
 }
 
 /* -------------------------- 中間大圖 -------------------*/
-.indexpic {
-  position: relative;
+.homebig {
+  margin: 0 auto;
+  max-width: 890px;
+  padding: 0 20px;
 }
 
-.indexpic__img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
 .bigpic {
+  background: url(../pic/apply.jpg);
   background-size: cover;
-  height: 2880px;
-  background-position: center;
+  background-position: center center;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -111,10 +108,11 @@ body {
 
 .filter {
   width: 100%;
-  height: 2880px;
-  background-color: rgba(239, 237, 240, 0.6);
+  height: 100%;
+  background-color: rgba(202, 202, 202, 0.3);
   position: absolute;
   top: 0;
+  left: 0;
   z-index: -1;
 }
 
@@ -138,30 +136,24 @@ body {
 }
 
 .bigpic span {
-  color: #32b121;
-}
-
-.write {
-  width: 550px;
-  text-align: center;
-  color: #333;
-  font-size: 16px;
-  letter-spacing: 2px;
-  font-weight: bold;
-  margin: 50px 0;
-  line-height: 1.6;
+  font-size: 30px;
+  color: #59a84f;
 }
 
 .joinStep {
   background-color: #fdfdfd;
+  margin: 25px auto;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.joinart {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
 }
 
 .joinStep h3 {
-  width: 550px;
   text-align: center;
   color: #333;
   font-size: 18px;
@@ -169,6 +161,7 @@ body {
   font-weight: bold;
   margin: 50px 0;
   line-height: 1.6;
+  padding: 20px;
 }
 
 .joinStep h2 {
@@ -176,28 +169,41 @@ body {
   line-height: 2;
   font-size: 39px;
   letter-spacing: 2px;
+  width: 40%;
+  text-align: center;
 }
 
 .joinStep img {
   margin: 50px;
+  padding: 20px;
+}
+
+.apply_mobile {
+  display: none;
+}
+
+.w {
+  margin-bottom: 50px;
+
+  padding: 0 20px;
 }
 
 form {
   background-color: #fdfdfd;
-  width: 760px;
-  height: 1600px;
+  width: 36%;
   margin-top: 190px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 form h4 {
-  width: 550px;
-  height: 60px;
+  /* width: 550px; */
+  /* height: 60px; */
   margin: 50px auto;
   font-size: 21px;
-  line-height: 1.5;
+  line-height: 1.6;
   letter-spacing: 3px;
   text-align: center;
   color: #333333;
@@ -206,15 +212,16 @@ form h4 {
 form h6 {
   font-size: 14px;
   color: #756e6e;
-  width: 232px;
-  height: 180px;
+  /* width: 232px; */
+  /* height: 180px; */
   line-height: 30px;
   align-self: self-start;
-  margin-left: 117px;
+  text-align: center;
+  padding: 0 20px;
 }
 
 input {
-  width: 555px;
+  width: 70%;
   height: 50px;
   margin-bottom: 30px;
   box-shadow: 0 0 10px rgba(193, 128, 53, 0.25);
@@ -250,25 +257,80 @@ input::placeholder {
   transform: translate(-50%, -50%);
 }
 
-input[type="file"]::file-selector-button {
+/* input[type="file"]::file-selector-button {
   display: none;
 }
 
 input[type="file"] {
-  width: 555px;
+  width: 90%;
   height: 300px;
+} */
+
+.upload_area {
+  background-color: #fdfdfd;
+  width: 75%;
+  position: relative;
+  margin: 30px auto;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(193, 128, 53, 0.25);
 }
 
-.list h5 {
-  position: absolute;
-  margin-top: 20px;
-  text-indent: 30px;
-  font-size: 12px;
-  color: #4a4a4a;
+input[type="file"] {
+  display: none;
+}
+
+label {
+  display: block;
+  position: relative;
+  background-color: rgba(193, 123, 58, 0.25);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  width: 70%;
+  padding: 15px 0;
+  margin: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #333;
+}
+
+#num-of-files {
+  font-weight: 400;
+  text-align: center;
+  margin: 15px 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.upload_area li {
+  font-weight: 500;
+  box-shadow: 0 0 10px rgba(193, 128, 53, 0.25);
+  color: #756e6e;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+}
+
+.upload_area li h5 {
+  font-size: 14px;
+  padding: 20px;
+}
+
+.upload_area li h5:nth-child(1) {
+  width: 70%;
+}
+.upload_area li h5:nth-child() {
+  width: 30%;
 }
 
 textarea {
-  width: 555px;
+  width: 70%;
   height: 280px;
   box-shadow: 0 0 10px rgba(193, 128, 53, 0.25);
   resize: none;
@@ -280,7 +342,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: rgba(193, 123, 58, 0.8);
+  background-color: rgba(193, 123, 58, 0.5);
   color: #f1f1f1;
   letter-spacing: 3px;
   font-size: 20px;
@@ -293,6 +355,8 @@ input[type="submit"] {
   position: relative;
   box-sizing: border-box;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .foot > img {
@@ -302,18 +366,19 @@ input[type="submit"] {
 
 nav {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 nav ul {
   display: flex;
-  width: 100%;
-  margin: 85px auto;
+  flex-direction: column;
+  /* width: 100%; */
 }
 
 nav ul li {
   flex-grow: 1;
   text-align: center;
+  padding-top: 20px;
 }
 
 nav p {
@@ -330,14 +395,15 @@ nav a {
 .rthings {
   box-sizing: border-box;
   padding-top: 20px;
-  padding-right: 50px;
+  margin-right: 100px;
 }
 
 .rthings h6 {
-  font-size: 14px;
-  width: 235px;
-  line-height: 3;
+  font-size: 16px;
+  /* width: 235px; */
+  line-height: 20px;
   color: #333;
+  padding-bottom: 10px;
 }
 
 .links img {
@@ -352,28 +418,128 @@ nav a {
   height: 20px;
 }
 
+/* --------------------------------- TibaMe --------------------------------------- */
+.TibaMe {
+  text-align: center;
+  background-color: #c17b3a;
+  line-height: 50px;
+  color: #333;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
 /* RWD */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   /* ============================ header ================================ */
   .top > ul {
     display: none;
-    /* display: flex; */
     flex-direction: column;
     position: absolute;
-    background-color: white;
+    background-color: rgba(249, 249, 249, 0.958);
     z-index: 3;
-    top: 100px;
+    top: 99px;
     width: 100%;
     font-size: 20px;
     letter-spacing: 3px;
+  }
+
+  .top > ul li {
+    border-bottom: 1px solid rgb(193, 128, 53);
   }
 
   .top {
     justify-content: space-between;
   }
 
+  .hamburger {
+    display: block;
+    margin-right: 20px;
+  }
+
   .hamburger_line {
     display: block;
-    margin: 40px;
+    top: 20px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* ======================== footer ===================================== */
+  nav {
+    display: none;
+  }
+
+  .rthings {
+    margin-right: 20px;
+  }
+
+  .apply_mobile {
+    display: block;
+  }
+
+  .apply_pc {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .upload_area li h5:nth-child(1) {
+    display: none;
+  }
+
+  .upload_area li h5:nth-child(2) {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* ======================== 中間大圖 ===================================== */
+  .homebig {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  /* ======================== footer ===================================== */
+  .foot img {
+    margin-left: 20px;
+  }
+
+  .rthings {
+    padding: 0;
+    margin-right: 0;
+  }
+
+  .rthings h6 {
+    display: none;
+  }
+
+  .foot {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .links a img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .title > h2::before,
+  .title > h2::after {
+    display: none;
+  }
+
+  .title {
+    background-color: #fff2e5;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .title > h2 {
+    /* text-align: center; */
+    display: block;
+    padding: 20px;
   }
 }

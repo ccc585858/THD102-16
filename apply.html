@@ -45,37 +45,47 @@
     </div>
 
     <!-- 中間大圖 -->
-    <section class="bigpic aboutuspic">
+    <!-- <section class="bigpic aboutuspic">
       <img src="./pic/apply.jpg" alt="" class="indexpic__img" />
 
       <div class="filter"></div>
       <div class="toptitle">
         <h1>商家申請</h1>
         <p>想要加入我們嗎? <br /><span>誠摯歡迎您</span></p>
-        <!-- <div class="write">
+      </div> -->
 
-        </div> -->
+    <!-- 中間大圖 -->
+    <section class="bigpic">
+      <div class="homebig">
+        <h1>商家申請</h1>
+        <p>想要加入我們嗎? <br /><span>誠摯歡迎您</span></p>
+        <div class="filter"></div>
       </div>
 
       <div class="joinStep">
-        <h3>
-          一起把健康分享到各個角落，讓更多人享用更健康的食物!!
-          我們希望可以把每天思考吃甚麼的時間，節省下來，藉由由我們合作一起來提供更健康、快速的服務給大家。
-        </h3>
-        <h2 class="join">加入流程</h2>
-        <img src="./pic/加入流程圖.svg" alt="" />
+        <div class="joinart">
+          <h3>
+            一起把健康分享到各個角落，讓更多人享用更健康的食物!!
+            我們希望可以把每天思考吃甚麼的時間，節省下來，藉由由我們合作一起來提供更健康、快速的服務給大家。
+          </h3>
+          <h2 class="join">加入流程</h2>
+          <img src="./pic/加入流程圖.svg" alt="" class="apply_pc" />
+          <img src="./pic/apply_RWD.png" alt="" class="apply_mobile" />
+        </div>
       </div>
 
       <form action="">
-        <h4>
-          成為我們的合作夥伴，心動不如馬上行動，不只提供健康的餐點，還可以增加商家收入，一舉數得。
-        </h4>
-        <h6>
-          這裡是NOON，您好<br />
-          只要你是有關健康餐盒的商家<br />
-          我們都誠摯地邀請您與我們一起傳達健康的觀念
-          提供我們以下資訊，我們會盡快與您聯絡!
-        </h6>
+        <div class="w">
+          <h4>
+            成為我們的合作夥伴，心動不如馬上行動，不只提供健康的餐點，還可以增加商家收入，一舉數得。
+          </h4>
+          <h6>這裡是NOON，您好</h6>
+          <h6>
+            只要你是有關健康餐盒的商家
+            我們都誠摯地邀請您與我們一起傳達健康的觀念
+          </h6>
+          <h6>提供我們以下資訊，我們會盡快與您聯絡!</h6>
+        </div>
         <input
           type="text"
           name=""
@@ -117,12 +127,14 @@
           required
         />
 
-        <div class="upload">
-          <i class="fa-solid fa-arrow-up-from-bracket"></i>
-          <label for="avatar" class="list">
-            <h5>菜單或商品清單列表：</h5>
-            <input type="file" accept="image/png, image/jpeg" required />
+        <div class="upload_area">
+          <input type="file" id="file-input" multiple />
+          <label for="file-input">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            &nbsp; 菜單或商品清單列表：
           </label>
+          <div id="num-of-files">未選擇檔案</div>
+          <ul id="files-list"></ul>
         </div>
 
         <textarea
@@ -180,5 +192,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/apply.js"></script>
   </body>
 </html>
