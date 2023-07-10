@@ -367,11 +367,23 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: rgba(193, 123, 58, 0.5);
+  /* background-color: rgba(193, 123, 58, 0.5); */
+  background-color: transparent;
   color: #333;
   letter-spacing: 3px;
   font-size: 20px;
   text-align: center;
+}
+
+.c {
+  width: 75%;
+  border-radius: 8px;
+  background-color: rgba(193, 123, 58, 0.5);
+  box-shadow: 0 0 10px rgba(193, 128, 53, 0.25);
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  height: 50px;
 }
 
 /* ---------------------------- footer ---------------------------- */
