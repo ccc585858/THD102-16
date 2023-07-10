@@ -1,5 +1,9 @@
 @import url(reset.css);
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "NotoSansTC", sans-serif;
   box-sizing: border-box;
@@ -194,18 +198,30 @@ nav a {
   letter-spacing: 2px;
   font-weight: bold;
 }
-/* ---------------------------------- TOP fixed ----------------------------------- */
-.topFixed {
-  position: relative;
+/* ---------------------------------- progress ----------------------------------- */
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  width: 70px;
+  height: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
-.topFixed img {
-  position: fixed;
-  right: 0;
-  bottom: 20%;
-  z-index: 2;
-  width: 100px;
-  cursor: pointer;
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #001a2e;
 }
 
 /* RWD */
