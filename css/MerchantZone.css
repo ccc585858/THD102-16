@@ -454,4 +454,20 @@ a .iosright {
   .rightSection__bottom a:hover i {
     transform: none;
   }
+
+  .leftSection__bottom a i,
+  .rightSection__bottom a i {
+    animation: translate 2s infinite;
+    /* transform: translate(100%);
+    transition: all 2s; */
+  }
+
+  @keyframes translate {
+    0% {
+      transform: translate(0%);
+    }
+    100% {
+      transform: translate(100%);
+    }
+  }
 }
