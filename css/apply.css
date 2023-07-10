@@ -73,20 +73,35 @@ body {
 .hamburger_line::after {
   top: 16px;
 }
-/* ---------------------------------- TOP fixed ----------------------------------- */
-.topFixed {
-  position: relative;
-}
-
-.topFixed img {
+/* ---------------------------------- progress ----------------------------------- */
+#progress {
   position: fixed;
-  right: 0;
-  bottom: 20%;
-  z-index: 2;
-  width: 100px;
+  bottom: 20px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  z-index: 5;
 }
 
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  color: #001a2e;
+  font-family: default;
+}
 /* -------------------------- 中間大圖 -------------------*/
 .homebig {
   margin: 0 auto;
@@ -169,7 +184,7 @@ body {
   line-height: 2;
   font-size: 39px;
   letter-spacing: 2px;
-  width: 40%;
+  width: 50%;
   text-align: center;
 }
 
@@ -221,15 +236,34 @@ form h6 {
 }
 
 input {
-  width: 70%;
-  height: 50px;
-  margin-bottom: 30px;
-  box-shadow: 0 0 10px rgba(193, 128, 53, 0.25);
+  background: transparent;
+  width: 100%;
   border: 0;
   text-indent: 30px;
   outline: none;
-  font-size: 12px;
+  font-size: 16px;
   position: relative;
+}
+
+.a {
+  background-color: #fdfdfd;
+  width: 75%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(193, 128, 53, 0.25);
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.b {
+  background-color: #fdfdfd;
+  width: 75%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(193, 128, 53, 0.25);
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 }
 
 input::placeholder {
@@ -257,15 +291,6 @@ input::placeholder {
   transform: translate(-50%, -50%);
 }
 
-/* input[type="file"]::file-selector-button {
-  display: none;
-}
-
-input[type="file"] {
-  width: 90%;
-  height: 300px;
-} */
-
 .upload_area {
   background-color: #fdfdfd;
   width: 75%;
@@ -287,7 +312,7 @@ label {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  width: 70%;
+  width: 100%;
   padding: 15px 0;
   margin: auto;
   border-radius: 8px;
@@ -325,20 +350,21 @@ ul {
 .upload_area li h5:nth-child(1) {
   width: 70%;
 }
-.upload_area li h5:nth-child() {
-  width: 30%;
+.upload_area li h5:nth-child(2) {
+  text-align: center;
 }
 
 textarea {
-  width: 70%;
   height: 280px;
-  box-shadow: 0 0 10px rgba(193, 128, 53, 0.25);
   resize: none;
-  border: none;
-  outline: none;
-  text-indent: 30px;
   margin-bottom: 50px;
   padding-top: 20px;
+  background: transparent;
+  width: 100%;
+  border: 0;
+  text-indent: 30px;
+  outline: none;
+  font-size: 16px;
 }
 
 input[type="submit"] {
@@ -346,6 +372,7 @@ input[type="submit"] {
   color: #333;
   letter-spacing: 3px;
   font-size: 20px;
+  text-align: center;
 }
 
 /* ---------------------------- footer ---------------------------- */

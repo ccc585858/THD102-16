@@ -221,8 +221,11 @@ nav a {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  font-size: 35px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
   color: #001a2e;
+  font-family: default;
 }
 
 /* RWD */
