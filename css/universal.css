@@ -220,10 +220,10 @@ nav a {
   background-color: #ffffff;
   border-radius: 50%;
   display: grid;
-  /* place-items: center; */
+  place-items: center;
   font-size: 30px;
-  text-align: center;
-  font-weight: bold;
+  /* text-align: center; */
+  /* font-weight: bold; */
   color: #001a2e;
 }
 
