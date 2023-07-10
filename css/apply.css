@@ -95,12 +95,11 @@ body {
   background-color: #ffffff;
   border-radius: 50%;
   display: grid;
-  place-items: center;
-  font-size: 25px;
+  /* place-items: center; */
+  font-size: 30px;
   text-align: center;
   font-weight: bold;
   color: #001a2e;
-  font-family: default;
 }
 /* -------------------------- 中間大圖 -------------------*/
 .homebig {
