@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Google Maps API 叢集標記範例</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy5_SjUbRXayyiYVb9QaQSlRUW6CSM5Io"></script>
+    <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+  </head>
+  <body>
+    <div id="map" style="width: 1200px; height: 600px"></div>
+
+    <script>
+      // const locations = [
+      //   { lat: 25.048787, lng: 121.517071 },
+      //   { lat: 25.047665, lng: 121.516999 },
+      //   { lat: 25.046453, lng: 121.515570 },
+      //   { lat: 25.046973, lng: 121.513635 },
+      //   { lat: 25.047964, lng: 121.513700 },
+      //   { lat: 25.048859, lng: 121.515784 },
+      //   { lat: 25.048933, lng: 121.518045 },
+      //   { lat: 25.049507, lng: 121.520085 },
+      //   { lat: 25.049366, lng: 121.522050 },
+      //   { lat: 25.049025, lng: 121.523706 },
+      //   { lat: 25.048570, lng: 121.525523 },
+      //   { lat: 25.048302, lng: 121.526950 },
+      //   { lat: 25.048008, lng: 121.528019 },
+      //   { lat: 25.047552, lng: 121.528902 },
+      //   { lat: 25.046926, lng: 121.529306 },
+      //   { lat: 25.045937, lng: 121.529306 },
+      //   { lat: 25.044963, lng: 121.528874 },
+      //   { lat: 25.043936, lng: 121.527785 },
+      //   { lat: 25.043457, lng: 121.526359 },
+      //   { lat: 25.042977, lng: 121.524439 }
+      // ];,
+      const locations = [
+        { lat: 25.052712674062953, lng: 121.54196468226735 },
+        { lat: 25.051545935285816, lng: 121.54356022472113 },
+        { lat: 25.05182051330395, lng: 121.54334833097181 },
+        { lat: 25.05297956231997, lng: 121.54337783709686 },
+        { lat: 25.052590799702212, lng: 121.54343261384928 },
+        { lat: 25.051637561592273, lng: 121.54358074086223 },
+        { lat: 25.052940684351633, lng: 121.5422647173042 },
+        { lat: 25.05152650744241, lng: 121.54355537818833 },
+        { lat: 25.05214537970299, lng: 121.5423682947061 },
+        { lat: 25.051492379152133, lng: 121.5419934509667 },
+      ];
+
+      const infos = [
+        "貝斯提",
+        "金玉滿堂",
+        "麥當勞 台北南京五",
+        "萬有全涮羊肉",
+        "<h3>Old rattan coffee 荖藤咖啡 (品牌本部)</h3>",
+        "香港茶水攤 南京店",
+        "國賓大飯店",
+        "11PASTA食義_南京店",
+        "Subway 南京復興店",
+        "<h3>樂芙甜點吃到飽</h3>",
+      ];
+      function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 14,
+          center: { lat: 25.052390403983576, lng: 121.54330653981468 },
+        });
+        const img = "img/placeholder.png";
+        const infowindow = new google.maps.InfoWindow();
+        // 創建標記
+        const markers = locations.map((position, i) => {
+          const info_label = infos[i];
+          const marker = new google.maps.Marker({
+            position,
+            info_label,
+            icon: img,
+          });
+          marker.addListener("click", () => {
+            infowindow.setContent(info_label);
+            infowindow.open(map, marker);
+          });
+          return marker;
+        });
+
+        // 創建叢集標記
+        const markerCluster = new markerClusterer.MarkerClusterer({
+          map,
+          markers,
+        });
+      }
+
+      // 載入地圖
+      initMap();
+    </script>
+  </body>
+</html>
